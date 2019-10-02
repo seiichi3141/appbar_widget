@@ -13,15 +13,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         key: scaffoldKey,
         appBar: AppBar(
-          leading: Icon(Icons.apps),
+          leading: Icon(Icons.menu),
           title: const Text('AppBar Widget'),
           actions: [
             IconButton(
-              icon: Icon(Icons.done),
+              icon: Icon(Icons.search),
               onPressed: () {
                 scaffoldKey.currentState.hideCurrentSnackBar();
                 scaffoldKey.currentState.showSnackBar(
-                  const SnackBar(content: Text('Pressed done')),
+                  const SnackBar(content: Text('Pressed search icon')),
                 );
               },
             ),
